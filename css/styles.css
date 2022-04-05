@@ -720,7 +720,12 @@ p {
   align-items: baseline;
 }
 
-.footer-socials-title {
+.footer-socials {
+  margin-right: 93px;
+}
+
+.footer-socials-title,
+.footer-subscribe-title {
   color: white;
   margin-bottom: 20px;
 }
@@ -762,6 +767,38 @@ p {
   background-color: #2196f3;
 }
 
+.footer-subscribe-email-letters {
+  display: flex;
+}
+.footer-subscribe-email-input {
+  display: block;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+}
+.footer-subscribe-email-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  /* identical to box height, or 188% */
+  color: #ffffff;
+  background-color: #2196f3;
+}
+
+.footer-subscribe-email-btn-logo {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  fill: #ffffff;
+}
 .backdrop {
   position: fixed;
   width: 100vw;
