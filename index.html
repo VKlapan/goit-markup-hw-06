@@ -491,12 +491,22 @@
     <!--Modal window-->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <p class="modal-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa
-          esse qui atque, pariatur accusantium libero doloremque autem ipsam
-          numquam ab sequi, eveniet quas quibusdam maxime fuga facere recusandae
-          a!
-        </p>
+        <h3 class="modal-form-title">
+          Оставьте свои данные, мы вам перезвоним
+        </h3>
+        <form action="" class="modal-form">
+          <lable modal-form-lable>Имя</lable>
+          <input type="text" name="name" id="name" />
+          <lable modal-form-lable>Телефон</lable>
+          <input type="tel" name="tel" id="tel" />
+          <lable modal-form-lable>Почта</lable>
+          <input type="email" name="mail" id="mail" />
+          <lable modal-form-lable>Комментарий</lable>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <input type="checkbox" name="" id="" />
+          <button type="submit">Отправить</button>
+        </form>
+
         <button type="button" class="modal-btn-close" data-modal-close>
           <svg class="modal-btn-close-img">
             <use href="images/sprite_opt.svg#btn-close"></use>

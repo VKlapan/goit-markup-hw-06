@@ -775,6 +775,7 @@ p {
   margin-right: 12px;
   width: 358px;
   height: 50px;
+  padding: 15px;
 }
 .footer-subscribe-email-btn {
   display: flex;
@@ -817,10 +818,6 @@ p {
 }
 
 .modal-window {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
   position: absolute;
   top: 50%;
   left: 50%;
@@ -858,4 +855,27 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+
+.modal-form-lable {
 }
