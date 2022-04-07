@@ -495,16 +495,38 @@
           Оставьте свои данные, мы вам перезвоним
         </h3>
         <form action="" class="modal-form">
-          <lable modal-form-lable>Имя</lable>
-          <input type="text" name="name" id="name" />
-          <lable modal-form-lable>Телефон</lable>
-          <input type="tel" name="tel" id="tel" />
-          <lable modal-form-lable>Почта</lable>
-          <input type="email" name="mail" id="mail" />
-          <lable modal-form-lable>Комментарий</lable>
-          <textarea name="" id="" cols="30" rows="10"></textarea>
-          <input type="checkbox" name="" id="" />
-          <button type="submit">Отправить</button>
+          <lable class="modal-form-lable">
+            <span class="modal-form-lable-text">Имя</span>
+            <input class="modal-form-lable-field" type="text" name="name" />
+          </lable>
+
+          <lable class="modal-form-lable">
+            <span class="modal-form-lable-text">Телефон</span>
+            <input class="modal-form-lable-field" type="tel" name="tel" />
+          </lable>
+
+          <lable class="modal-form-lable">
+            <span class="modal-form-lable-text">Почта</span>
+            <input class="modal-form-lable-field" type="email" name="mail" />
+          </lable>
+
+          <lable class="modal-form-lable">
+            <span class="modal-form-lable-text">Комментарий</span>
+            <textarea
+              class="modal-form-lable-field"
+              name="comments"
+              cols="30"
+              rows="10"
+            ></textarea>
+          </lable>
+
+          <lable class="modal-form-lable checkbox-lable">
+            <input type="checkbox" name="agreement" />
+            <span class="modal-form-lable-text">
+              Соглашаюсь с рассылкой и принимаю Условия договора
+            </span>
+          </lable>
+          <button class="modal-form-button" type="submit">Отправить</button>
         </form>
 
         <button type="button" class="modal-btn-close" data-modal-close>
