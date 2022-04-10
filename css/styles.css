@@ -776,6 +776,12 @@ p {
   width: 358px;
   height: 50px;
   padding: 15px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: #2f303a;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-subscribe-email-btn {
   display: flex;
@@ -784,6 +790,7 @@ p {
   width: 200px;
   height: 50px;
   border: 0;
+  border-radius: 4px;
 
   font-family: "Roboto";
   font-style: normal;
@@ -803,6 +810,8 @@ p {
   margin-left: 10px;
   fill: #ffffff;
 }
+
+/* Modal window + Form */
 
 .backdrop {
   position: fixed;
@@ -849,10 +858,17 @@ p {
 
   cursor: pointer;
 }
+
 .modal-btn-close-img {
   width: 11px;
   height: 11px;
   fill: #000000;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn-close:hover .modal-btn-close-img {
+  fill: #2196f3;
 }
 
 .is-hidden {
@@ -905,12 +921,21 @@ p {
   color: #757575;
 }
 
+.modal-form-lable-link {
+  color: #2196f3;
+}
+
 .modal-form-lable-field {
   width: 100%;
   height: 40px;
   padding: 11px 12px;
   padding-left: 28px;
+  outline: none;
+  cursor: pointer;
+
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-form-lable-logo {
   position: absolute;
   top: 30px;
@@ -920,8 +945,24 @@ p {
   height: 18px;
 
   fill: #212121;
+
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-form-lable-field:hover,
+.modal-form-lable-field:focus {
+  border: 2px solid #2196f3;
+}
+
+.modal-form-lable-field:hover + .modal-form-lable-logo,
+.modal-form-lable-field:focus + .modal-form-lable-logo {
+  fill: #2196f3;
+}
+
+.textarea {
+  resize: none;
+  height: 120px;
+}
 .checkbox-lable {
   position: relative;
   display: flex;
@@ -950,12 +991,14 @@ p {
   border-color: #000000;
   border-radius: 2px;
   margin-right: 7px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-checked:checked + .modal-form-custom-checked {
-  border: 0;
+  border-color: #2196f3;
   background-color: #2196f3;
-  background-origin: border-box;
 }
 .modal-form-custom-checked-logo {
   width: 11px;
@@ -968,6 +1011,9 @@ p {
   background: #2196f3;
   border: 0;
   border-radius: 4px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   color: #ffffff;
   font-family: "Roboto";
