@@ -718,10 +718,12 @@ p {
 .footer-box {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
-.footer-socials {
-  margin-right: 93px;
+.footer-wraper {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-socials-title,
